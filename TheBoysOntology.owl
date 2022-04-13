@@ -1,0 +1,993 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.rc-pec-vmarinpu.org/ontologies/the-boys-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.rc-pec-vmarinpu.org/ontologies/the-boys-ontology"
+     versionIRI="http://www.rc-pec-vmarinpu.org/ontologies/the-boys-ontology/0.0.1">
+    <Prefix name="" IRI="http://www.rc-pec-vmarinpu.org/ontologies/the-boys-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">An ontology about the series &apos;The Boys&apos;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">The Boys Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Assault"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessRelatedTimeEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commercial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Congregation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coorporation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrugAbuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Episode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FilmShooting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intercourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JobPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LawEnforcementAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoveRelatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultitudinaryEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Murder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outlaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeopleAssociation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalAssistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Politician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressRelease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quarrel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousConference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scientist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secret"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecretPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Squabble"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superhero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperheroPresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superpowers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerroristGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeBoundEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Villain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ViolentEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#attendsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#commits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#goesOnDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#goesOnMission"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAffectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAttendedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInLoveWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isVictimOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesPlaceInEpisode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesPlaceInSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbilityToCommunicateWithSeaCreatures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbilityToFly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AbilityToShootLIghtRays"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Billy_Butcher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BodyElasticity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EnhancedAgility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ergokinesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Homelander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Invisibility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pyrokinesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Retrocognition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shapeshifting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SuperSpeed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SuperStrength"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Boys"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Seven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TissueRegeneration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vought"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Group"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Assault"/>
+        <Class IRI="#Crime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battle"/>
+        <Class IRI="#Fight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessRelatedTimeEvent"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commercial"/>
+        <Class IRI="#BusinessRelatedTimeEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Congregation"/>
+        <Class IRI="#PeopleAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coorporation"/>
+        <Class IRI="#PeopleAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crime"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Date"/>
+        <Class IRI="#LoveRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Date"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#isAttendedBy"/>
+            <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrugAbuse"/>
+        <Class IRI="#Crime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fight"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FilmShooting"/>
+        <Class IRI="#BusinessRelatedTimeEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#PeopleAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intercourse"/>
+        <Class IRI="#LoveRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LawEnforcementAgent"/>
+        <Class IRI="#JobPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoveRelatedEvent"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mission"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mission"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultitudinaryEvent"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Murder"/>
+        <Class IRI="#Crime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outlaw"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalAssistant"/>
+        <Class IRI="#JobPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Politician"/>
+        <Class IRI="#JobPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#President"/>
+        <Class IRI="#JobPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressRelease"/>
+        <Class IRI="#MultitudinaryEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quarrel"/>
+        <Class IRI="#Fight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousConference"/>
+        <Class IRI="#MultitudinaryEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scientist"/>
+        <Class IRI="#JobPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spy"/>
+        <Class IRI="#JobPosition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Squabble"/>
+        <Class IRI="#Fight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Superhero"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperheroPresentation"/>
+        <Class IRI="#MultitudinaryEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerroristGroup"/>
+        <Class IRI="#PeopleAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Villain"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ViolentEvent"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#AbilityToCommunicateWithSeaCreatures"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#AbilityToFly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#AbilityToShootLIghtRays"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outlaw"/>
+        <NamedIndividual IRI="#Billy_Butcher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#BodyElasticity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#EnhancedAgility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#Ergokinesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superhero"/>
+        <NamedIndividual IRI="#Homelander"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Villain"/>
+        <NamedIndividual IRI="#Homelander"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#Invisibility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#Pyrokinesis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#Retrocognition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#Shapeshifting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#SuperSpeed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#SuperStrength"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Group"/>
+        <NamedIndividual IRI="#The_Boys"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Group"/>
+        <NamedIndividual IRI="#The_Seven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpowers"/>
+        <NamedIndividual IRI="#TissueRegeneration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coorporation"/>
+        <NamedIndividual IRI="#Vought"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#attendsTo"/>
+        <ObjectProperty IRI="#participates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#commits"/>
+        <ObjectProperty IRI="#participates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#goesOnDate"/>
+        <ObjectProperty IRI="#attendsTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#goesOnMission"/>
+        <ObjectProperty IRI="#attendsTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAffectedBy"/>
+        <ObjectProperty IRI="#participates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isVictimOf"/>
+        <ObjectProperty IRI="#isAffectedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#takesPlaceInSeason"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#worksAs"/>
+        <ObjectProperty IRI="#participates"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#attendsTo"/>
+        <ObjectProperty IRI="#isAttendedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#goesOnDate"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAttendedBy"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participates"/>
+        <ObjectUnionOf>
+            <Class IRI="#Character"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#commits"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#goesOnDate"/>
+        <Class IRI="#Date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#goesOnMission"/>
+        <Class IRI="#Mission"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAffectedBy"/>
+        <Class IRI="#TimeBoundEvent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAttendedBy"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isVictimOf"/>
+        <Class IRI="#Crime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isVictimOf"/>
+        <Class IRI="#Fight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participates"/>
+        <ObjectUnionOf>
+            <Class IRI="#TimeBoundEvent"/>
+            <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksAs"/>
+        <Class IRI="#JobPosition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Group</IRI>
+        <Literal>A class of Agents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Group</IRI>
+        <Literal>Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Group</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>An organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>A person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Person</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Project</IRI>
+        <Literal>A project (a collective endeavour of some kind).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Project</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Project</IRI>
+        <Literal>Project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Project</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal>The birthday of this Agent, represented in mm-dd string form, eg. &apos;12-31&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal>birthday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/birthday</IRI>
+        <Literal>unstable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal>The family name of some person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal>familyName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/familyName</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal>The first name of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal>firstName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/firstName</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/fundedBy</IRI>
+        <Literal>An organization funding a project or person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/fundedBy</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/fundedBy</IRI>
+        <Literal>funded by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/fundedBy</IRI>
+        <Literal>archaic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal>A person known by this person (indicating some level of reciprocated interaction between the parties).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal>knows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/knows</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/maker</IRI>
+        <Literal>An agent that  made this thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/maker</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/maker</IRI>
+        <Literal>maker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/maker</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/member</IRI>
+        <Literal>Indicates a member of a Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/member</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/member</IRI>
+        <Literal>member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/member</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>A name for some thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/name</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal>A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal>nickname</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/nick</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
