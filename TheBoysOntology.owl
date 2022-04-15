@@ -14,13 +14,20 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal xml:lang="en">Víctor Marín Puchades</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">An ontology about the series &apos;The Boys&apos;</Literal>
+        <Literal xml:lang="en">An ontology about the series The Boys made to be submitted as part of an assignment to an undergraduate course on Knowledge Representation</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">The Boys Ontology</Literal>
     </Annotation>
+    <Declaration>
+        <Class IRI="http://schema.org/Person"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#Assault"/>
     </Declaration>
@@ -37,6 +44,9 @@
         <Class IRI="#Commercial"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CompoundV"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Congregation"/>
     </Declaration>
     <Declaration>
@@ -44,6 +54,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Crime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Criminal"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Date"/>
@@ -133,7 +146,7 @@
         <Class IRI="#SuperheroPresentation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TerroristGroup"/>
@@ -146,6 +159,18 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ViolentEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
@@ -166,10 +191,19 @@
         <ObjectProperty IRI="#commits"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#dated"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#goesOnDate"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#goesOnMission"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSuperpower"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVictim"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isAffectedBy"/>
@@ -178,10 +212,16 @@
         <ObjectProperty IRI="#isAttendedBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isCommittedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isInLoveWith"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isVictimOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#murdered"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#participates"/>
@@ -193,6 +233,9 @@
         <ObjectProperty IRI="#takesPlaceInSeason"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#wasMurderedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#worksAs"/>
     </Declaration>
     <Declaration>
@@ -202,10 +245,16 @@
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPurpose"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
@@ -220,6 +269,18 @@
         <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Billy_butcher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/The_Homelander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Hughie_Campbell_(The_Boys)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ATrain"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#AbilityToCommunicateWithSeaCreatures"/>
     </Declaration>
     <Declaration>
@@ -229,7 +290,10 @@
         <NamedIndividual IRI="#AbilityToShootLIghtRays"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Billy_Butcher"/>
+        <NamedIndividual IRI="#BillyButcher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BlackNoir"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BodyElasticity"/>
@@ -244,10 +308,28 @@
         <NamedIndividual IRI="#Homelander"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Hughie"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Invisibility"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Kimiko"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LampLighter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MurderOfTranslucent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PopClaw"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Pyrokinesis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QueenMave"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Retrocognition"/>
@@ -256,22 +338,37 @@
         <NamedIndividual IRI="#Shapeshifting"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Starlight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stormfront"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SuperSpeed"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SuperStrength"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#The_Boys"/>
+        <NamedIndividual IRI="#TheBoys"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#The_Seven"/>
+        <NamedIndividual IRI="#TheDeep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheSeven"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TissueRegeneration"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Translucent"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Vought"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
@@ -283,28 +380,13 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://schema.org/Person"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/name"/>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/name"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://schema.org/Person"/>
@@ -349,6 +431,10 @@
     <SubClassOf>
         <Class IRI="#Crime"/>
         <Class IRI="#TimeBoundEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Criminal"/>
+        <Class IRI="#Character"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Date"/>
@@ -404,6 +490,13 @@
     <SubClassOf>
         <Class IRI="#Murder"/>
         <Class IRI="#Crime"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Murder"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#takesPlaceInEpisode"/>
+            <Class IRI="#Episode"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Outlaw"/>
@@ -498,31 +591,35 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superhero"/>
+        <NamedIndividual IRI="#ATrain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#AbilityToCommunicateWithSeaCreatures"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#AbilityToFly"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#AbilityToShootLIghtRays"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Outlaw"/>
-        <NamedIndividual IRI="#Billy_Butcher"/>
+        <NamedIndividual IRI="#BillyButcher"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#BodyElasticity"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#EnhancedAgility"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#Ergokinesis"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -534,45 +631,120 @@
         <NamedIndividual IRI="#Homelander"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Outlaw"/>
+        <NamedIndividual IRI="#Hughie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#Invisibility"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Murder"/>
+        <NamedIndividual IRI="#MurderOfTranslucent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#Pyrokinesis"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#Retrocognition"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#Shapeshifting"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#SuperSpeed"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#SuperStrength"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Group"/>
-        <NamedIndividual IRI="#The_Boys"/>
+        <NamedIndividual IRI="#TheBoys"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Group"/>
-        <NamedIndividual IRI="#The_Seven"/>
+        <NamedIndividual IRI="#TheSeven"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Superpowers"/>
+        <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#TissueRegeneration"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Coorporation"/>
         <NamedIndividual IRI="#Vought"/>
     </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Billy_butcher"/>
+        <NamedIndividual IRI="#BillyButcher"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/resource/The_Homelander"/>
+        <NamedIndividual IRI="#Homelander"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Hughie_Campbell_(The_Boys)"/>
+        <NamedIndividual IRI="#Hughie"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#commits"/>
+        <NamedIndividual IRI="#Hughie"/>
+        <NamedIndividual IRI="#MurderOfTranslucent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dated"/>
+        <NamedIndividual IRI="#Hughie"/>
+        <NamedIndividual IRI="#Starlight"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSuperpower"/>
+        <NamedIndividual IRI="#Starlight"/>
+        <NamedIndividual IRI="#Ergokinesis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSuperpower"/>
+        <NamedIndividual IRI="#Starlight"/>
+        <NamedIndividual IRI="#SuperStrength"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSuperpower"/>
+        <NamedIndividual IRI="#Stormfront"/>
+        <NamedIndividual IRI="#AbilityToFly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSuperpower"/>
+        <NamedIndividual IRI="#Translucent"/>
+        <NamedIndividual IRI="#Invisibility"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isVictimOf"/>
+        <NamedIndividual IRI="#Translucent"/>
+        <NamedIndividual IRI="#MurderOfTranslucent"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Homelander"/>
+        <Literal xml:lang="en">John</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/familyName"/>
+        <NamedIndividual IRI="#Hughie"/>
+        <Literal xml:lang="en">Campbell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
+        <NamedIndividual IRI="#Hughie"/>
+        <Literal xml:lang="en">Hugh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://xmlns.com/foaf/0.1/nick"/>
+        <NamedIndividual IRI="#Hughie"/>
+        <Literal xml:lang="en">Hughie</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#attendsTo"/>
         <ObjectProperty IRI="#participates"/>
@@ -580,6 +752,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#commits"/>
         <ObjectProperty IRI="#participates"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dated"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/0.1/knows"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#goesOnDate"/>
@@ -598,7 +774,15 @@
         <ObjectProperty IRI="#isAffectedBy"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#murdered"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#takesPlaceInSeason"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#wasMurderedBy"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -610,12 +794,43 @@
         <ObjectProperty IRI="#isAttendedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#commits"/>
+        <ObjectProperty IRI="#isCommittedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasVictim"/>
+        <ObjectProperty IRI="#isVictimOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#murdered"/>
+        <ObjectProperty IRI="#wasMurderedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/made"/>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/maker"/>
     </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#dated"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#commits"/>
+        <Class IRI="#Criminal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dated"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#goesOnDate"/>
         <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSuperpower"/>
+        <Class IRI="#Superhero"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVictim"/>
+        <Class IRI="#Crime"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAttendedBy"/>
@@ -627,6 +842,10 @@
             <Class IRI="#Character"/>
             <Class IRI="#Group"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasMurderedBy"/>
+        <Class IRI="#Character"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
@@ -649,12 +868,24 @@
         <Class IRI="#Crime"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#dated"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#goesOnDate"/>
         <Class IRI="#Date"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#goesOnMission"/>
         <Class IRI="#Mission"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSuperpower"/>
+        <Class IRI="#Superpower"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVictim"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isAffectedBy"/>
@@ -680,6 +911,10 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasMurderedBy"/>
+        <Class IRI="#Criminal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#worksAs"/>
         <Class IRI="#JobPosition"/>
     </ObjectPropertyRange>
@@ -703,6 +938,13 @@
         <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasPurpose"/>
+        <ObjectUnionOf>
+            <Class IRI="#Mission"/>
+            <Class IRI="#SecretPlan"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
     </DataPropertyDomain>
@@ -715,6 +957,10 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
     </DataPropertyDomain>
     <DataPropertyRange>
+        <DataProperty IRI="#hasPurpose"/>
+        <Datatype abbreviatedIRI="rdf:PlainLiteral"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
@@ -726,6 +972,63 @@
         <DataProperty IRI="http://xmlns.com/foaf/0.1/firstName"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>This rule adds facts for people that have committed a murder</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>ActorOfAMurderBecomesMurderer</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#commits"/>
+                <Variable IRI="#m"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Murder"/>
+                <Variable IRI="#e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isVictimOf"/>
+                <Variable IRI="#v"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#murdered"/>
+                <Variable IRI="#m"/>
+                <Variable IRI="#v"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Criminal</IRI>
+        <Literal xml:lang="en">Person that has commited a crime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Homelander</IRI>
+        <Literal xml:lang="en">The Homelander is the leader of the superhero group called The Seven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dated</IRI>
+        <Literal xml:lang="en">Property that links individuals that have had dates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPurpose</IRI>
+        <Literal xml:lang="en">DataProperty that explains the purpose of a given instance.</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://xmlns.com/foaf/0.1/Group</IRI>
