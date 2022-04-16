@@ -12,6 +12,7 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="dron" IRI="http://purl.obolibrary.org/obo"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -26,6 +27,18 @@
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">The Boys Ontology</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_52217"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/IllegalExperimentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/SeriesPart"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://schema.org/Person"/>
     </Declaration>
     <Declaration>
@@ -38,19 +51,10 @@
         <Class IRI="#BusinessRelatedTimeEvent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Character"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Commercial"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CompoundV"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Congregation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Coorporation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Crime"/>
@@ -62,7 +66,13 @@
         <Class IRI="#Date"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Drug"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DrugAbuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrugAdministrationPeriod"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Episode"/>
@@ -80,9 +90,6 @@
         <Class IRI="#Intercourse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#JobPosition"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#LawEnforcementAgent"/>
     </Declaration>
     <Declaration>
@@ -98,13 +105,22 @@
         <Class IRI="#Murder"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Organisation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Outlaw"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PeopleAssociation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PersonalAssistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlotPoint"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Politician"/>
@@ -114,6 +130,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#PressRelease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profession"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Quarrel"/>
@@ -152,9 +171,6 @@
         <Class IRI="#TerroristGroup"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TimeBoundEvent"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Villain"/>
     </Declaration>
     <Declaration>
@@ -185,6 +201,15 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/isComposedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#attendsTo"/>
     </Declaration>
     <Declaration>
@@ -198,6 +223,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#goesOnMission"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hadDrug"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBeenExperimentedOnBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSuperpower"/>
@@ -257,6 +288,12 @@
         <DataProperty IRI="#hasPurpose"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasSuperpowers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isMurderer"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
     </Declaration>
     <Declaration>
@@ -290,6 +327,9 @@
         <NamedIndividual IRI="#AbilityToShootLIghtRays"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Adulthood"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BillyButcher"/>
     </Declaration>
     <Declaration>
@@ -297,6 +337,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BodyElasticity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Childhood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CompoundV"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#EnhancedAgility"/>
@@ -368,6 +414,9 @@
         <NamedIndividual IRI="#Vought"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
     </Declaration>
     <Declaration>
@@ -383,11 +432,30 @@
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://xmlns.com/foaf/0.1/name"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+        <Class IRI="#Drug"/>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://schema.org/Person"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
@@ -397,9 +465,25 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#Organisation"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
     </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_52217"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/IllegalExperimentation"/>
+        <Class IRI="#Crime"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Assault"/>
         <Class IRI="#Crime"/>
@@ -410,11 +494,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BusinessRelatedTimeEvent"/>
-        <Class IRI="#TimeBoundEvent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Character"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="#PlotPoint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Commercial"/>
@@ -425,20 +505,16 @@
         <Class IRI="#PeopleAssociation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Coorporation"/>
-        <Class IRI="#PeopleAssociation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Crime"/>
-        <Class IRI="#TimeBoundEvent"/>
+        <Class IRI="#PlotPoint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Criminal"/>
-        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Date"/>
-        <Class IRI="#LoveRelatedEvent"/>
+        <Class IRI="#PlotPoint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Date"/>
@@ -452,8 +528,19 @@
         <Class IRI="#Crime"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Episode"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SeriesPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Episode"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/isPartOf"/>
+            <Class IRI="#Season"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Fight"/>
-        <Class IRI="#TimeBoundEvent"/>
+        <Class IRI="#PlotPoint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FilmShooting"/>
@@ -469,15 +556,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LawEnforcementAgent"/>
-        <Class IRI="#JobPosition"/>
+        <Class IRI="#Profession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LoveRelatedEvent"/>
-        <Class IRI="#TimeBoundEvent"/>
+        <Class IRI="#PlotPoint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mission"/>
-        <Class IRI="#TimeBoundEvent"/>
+        <Class IRI="#PlotPoint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mission"/>
@@ -485,7 +572,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MultitudinaryEvent"/>
-        <Class IRI="#TimeBoundEvent"/>
+        <Class IRI="#PlotPoint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Murder"/>
@@ -499,20 +586,24 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Organisation"/>
+        <Class IRI="#PeopleAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Outlaw"/>
-        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PersonalAssistant"/>
-        <Class IRI="#JobPosition"/>
+        <Class IRI="#Profession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Politician"/>
-        <Class IRI="#JobPosition"/>
+        <Class IRI="#Profession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#President"/>
-        <Class IRI="#JobPosition"/>
+        <Class IRI="#Profession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PressRelease"/>
@@ -528,11 +619,22 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Scientist"/>
-        <Class IRI="#JobPosition"/>
+        <Class IRI="#Profession"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Season"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SeriesPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Season"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/isComposedOf"/>
+            <Class IRI="#Episode"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Spy"/>
-        <Class IRI="#JobPosition"/>
+        <Class IRI="#Profession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Squabble"/>
@@ -540,7 +642,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Superhero"/>
-        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Superhero"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSuperpower"/>
+            <Class IRI="#Superpower"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SuperheroPresentation"/>
@@ -552,11 +661,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Villain"/>
-        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ViolentEvent"/>
-        <Class IRI="#TimeBoundEvent"/>
+        <Class IRI="#PlotPoint"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
@@ -575,6 +684,10 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#Group"/>
+        <Class IRI="#Organisation"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
     </DisjointClasses>
@@ -590,6 +703,11 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
     </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="http://purl.obolibrary.org/obo/SeriesPart"/>
+        <Class IRI="#Episode"/>
+        <Class IRI="#Season"/>
+    </DisjointUnion>
     <ClassAssertion>
         <Class IRI="#Superhero"/>
         <NamedIndividual IRI="#ATrain"/>
@@ -607,12 +725,24 @@
         <NamedIndividual IRI="#AbilityToShootLIghtRays"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#DrugAdministrationPeriod"/>
+        <NamedIndividual IRI="#Adulthood"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Outlaw"/>
         <NamedIndividual IRI="#BillyButcher"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Superpower"/>
         <NamedIndividual IRI="#BodyElasticity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DrugAdministrationPeriod"/>
+        <NamedIndividual IRI="#Childhood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#CompoundV"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Superpower"/>
@@ -675,7 +805,7 @@
         <NamedIndividual IRI="#TissueRegeneration"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Coorporation"/>
+        <Class IRI="#Organisation"/>
         <NamedIndividual IRI="#Vought"/>
     </ClassAssertion>
     <SameIndividual>
@@ -690,6 +820,10 @@
         <NamedIndividual IRI="http://dbpedia.org/resource/Hughie_Campbell_(The_Boys)"/>
         <NamedIndividual IRI="#Hughie"/>
     </SameIndividual>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Adulthood"/>
+        <NamedIndividual IRI="#Childhood"/>
+    </DifferentIndividuals>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#commits"/>
         <NamedIndividual IRI="#Hughie"/>
@@ -766,6 +900,10 @@
         <ObjectProperty IRI="#attendsTo"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBeenExperimentedOnBy"/>
+        <ObjectProperty IRI="#isVictimOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isAffectedBy"/>
         <ObjectProperty IRI="#participates"/>
     </SubObjectPropertyOf>
@@ -778,8 +916,12 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#takesPlaceInEpisode"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/takesPlaceIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#takesPlaceInSeason"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/takesPlaceIn"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#wasMurderedBy"/>
@@ -813,16 +955,32 @@
         <ObjectProperty IRI="#dated"/>
     </SymmetricObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/isComposedOf"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/isPartOf"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/takesPlaceIn"/>
+        <Class IRI="#PlotPoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#commits"/>
         <Class IRI="#Criminal"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#dated"/>
-        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#goesOnDate"/>
-        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hadDrug"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSuperpower"/>
@@ -834,18 +992,18 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAttendedBy"/>
-        <Class IRI="#TimeBoundEvent"/>
+        <Class IRI="#PlotPoint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#participates"/>
         <ObjectUnionOf>
-            <Class IRI="#Character"/>
-            <Class IRI="#Group"/>
+            <Class IRI="#PeopleAssociation"/>
+            <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#wasMurderedBy"/>
-        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
@@ -864,12 +1022,24 @@
         <Class IRI="http://xmlns.com/foaf/0.1/Group"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/isComposedOf"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/isPartOf"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/takesPlaceIn"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SeriesPart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#commits"/>
         <Class IRI="#Crime"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#dated"/>
-        <Class IRI="#Character"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#goesOnDate"/>
@@ -878,6 +1048,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#goesOnMission"/>
         <Class IRI="#Mission"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hadDrug"/>
+        <Class IRI="#Drug"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBeenExperimentedOnBy"/>
+        <Class IRI="#Organisation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSuperpower"/>
@@ -889,7 +1067,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isAffectedBy"/>
-        <Class IRI="#TimeBoundEvent"/>
+        <Class IRI="#PlotPoint"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isAttendedBy"/>
@@ -897,18 +1075,23 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isVictimOf"/>
-        <Class IRI="#Crime"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isVictimOf"/>
-        <Class IRI="#Fight"/>
+        <ObjectUnionOf>
+            <Class IRI="#Crime"/>
+            <Class IRI="#Fight"/>
+            <Class IRI="#Organisation"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#participates"/>
-        <ObjectUnionOf>
-            <Class IRI="#TimeBoundEvent"/>
-            <Class IRI="http://xmlns.com/foaf/0.1/Project"/>
-        </ObjectUnionOf>
+        <Class IRI="#PlotPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takesPlaceInEpisode"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takesPlaceInSeason"/>
+        <Class IRI="#Season"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#wasMurderedBy"/>
@@ -916,7 +1099,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#worksAs"/>
-        <Class IRI="#JobPosition"/>
+        <Class IRI="#Profession"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/fundedBy"/>
@@ -934,15 +1117,28 @@
         <ObjectProperty IRI="http://xmlns.com/foaf/0.1/member"/>
         <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
     </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/isComposedOf"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/isPartOf"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isMurderer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
     <FunctionalDataProperty>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#hasPurpose"/>
-        <ObjectUnionOf>
-            <Class IRI="#Mission"/>
-            <Class IRI="#SecretPlan"/>
-        </ObjectUnionOf>
+        <Class IRI="#PlotPoint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSuperpowers"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isMurderer"/>
+        <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
@@ -959,6 +1155,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasPurpose"/>
         <Datatype abbreviatedIRI="rdf:PlainLiteral"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSuperpowers"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isMurderer"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="http://xmlns.com/foaf/0.1/birthday"/>
@@ -1009,15 +1213,429 @@
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>This rule adds facts for people that have committed a murder</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>IsMurdered</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#commits"/>
+                <Variable IRI="#m"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Murder"/>
+                <Variable IRI="#e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isVictimOf"/>
+                <Variable IRI="#v"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#isMurderer"/>
+                <Variable IRI="#m"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Rule that generates fact that relates plot point to season if it is part of an episode that is part of that season.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TakesPlaceInSeason</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#takesPlaceInEpisode"/>
+                <Variable IRI="#pp"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/isPartOf"/>
+                <Variable IRI="#e"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#takesPlaceInSeason"/>
+                <Variable IRI="#pp"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>This rule entails that the people that had Compund V have superpowers</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>HasSuperpowers</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hadDrug"/>
+                <Variable IRI="#p"/>
+                <NamedIndividual IRI="#CompoundV"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSuperpowers"/>
+                <Variable IRI="#p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>This rule adds facts for people that have superpowers but are not Outlaws stating that they have been experimented on by Vougth</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>ExperimentedOnByVought</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSuperpower"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#s"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasSuperpowers"/>
+                <Variable IRI="#p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_23888</IRI>
+        <Literal>Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_23888</IRI>
+        <Literal>chebi_ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal>ChEBI</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_23888</IRI>
+        <Literal>drugs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal>ChEBI</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_23888</IRI>
+        <Literal>medicine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_23888</IRI>
+        <Literal>CHEBI:23888</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_23888</IRI>
+        <IRI>http://purl.obolibrary.org/obo/chebi#3_STAR</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CHEBI_23888</IRI>
+        <Literal>drug</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/IllegalExperimentation</IRI>
+        <Literal xml:lang="en">Class that represents the illegal experiments conducted by people or people associations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IllegalExperimentation</IRI>
+        <Literal xml:lang="en">Illegal Experimentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/SeriesPart</IRI>
+        <Literal xml:lang="en">Class that represents a discrete part of a series, being it an indivisible part or a collection thereof.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/SeriesPart</IRI>
+        <Literal xml:lang="en">Series Part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/isComposedOf</IRI>
+        <Literal xml:lang="en">Object property that represents a composition relation between a season and its episodes. That is, the domain accepts a season and the range should be an expisode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/isComposedOf</IRI>
+        <Literal xml:lang="en">Is Composed Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/isPartOf</IRI>
+        <Literal xml:lang="en">Object property that represents a relation between an episode and the season that episode belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/isPartOf</IRI>
+        <Literal xml:lang="en">Is Part Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/takesPlaceIn</IRI>
+        <Literal xml:lang="en">Object property that identifies the relation between a plot point and the series part it takes place in, either an episode or a season.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/takesPlaceIn</IRI>
+        <Literal xml:lang="en">Takes place in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Crime</IRI>
+        <Literal xml:lang="en">Class that represenets the crimes that can be committed by the characters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Crime</IRI>
+        <Literal xml:lang="en">Crime</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Criminal</IRI>
-        <Literal xml:lang="en">Person that has commited a crime</Literal>
+        <Literal xml:lang="en">Class representing people that have commited a crime. They do not necessarily need to be hidding from the law (since they might not be suspicious of blame).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Date</IRI>
+        <Literal xml:lang="en">Class to represent the instances of romantic dates in which several characters participate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Date</IRI>
+        <Literal xml:lang="en">Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Drug</IRI>
+        <Literal xml:lang="en">Class representing drugs that the characters of the series might take.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DrugAdministrationPeriod</IRI>
+        <Literal xml:lang="en">Class representing the period through which a druc was administered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Episode</IRI>
+        <Literal xml:lang="en">Class that represents the episodes of the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Episode</IRI>
+        <Literal xml:lang="en">Episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Group</IRI>
+        <Literal xml:lang="en">Class representing a group to which people can belong.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Homelander</IRI>
         <Literal xml:lang="en">The Homelander is the leader of the superhero group called The Seven</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LawEnforcementAgent</IRI>
+        <Literal xml:lang="en">Class that represents people that work as law enforcement agents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LawEnforcementAgent</IRI>
+        <Literal xml:lang="en">Law enforcement agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mission</IRI>
+        <Literal xml:lang="en">Class that represents the missiions that are carried out by people, groups or organisations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mission</IRI>
+        <Literal xml:lang="en">MIssion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organisation</IRI>
+        <Literal xml:lang="en">Class representing an organisation to which people can belong. It differs from the Group class in that an organisation needs to have a name and is composed of more members.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Outlaw</IRI>
+        <Literal xml:lang="en">Class representing the people that are fugitives from the law (not necessarily because they have indeed committed a crime).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PeopleAssociation</IRI>
+        <Literal xml:lang="en">Class that represents entities that are composed of members, that is people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Class that represents all the characters that are human, people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PersonalAssistant</IRI>
+        <Literal xml:lang="en">Class that represents people that work as personal assistants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PersonalAssistant</IRI>
+        <Literal xml:lang="en">Personal Assistant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PlotPoint</IRI>
+        <Literal xml:lang="en">Class to represent events that have the potential to change the flow of the story or plot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PlotPoint</IRI>
+        <Literal xml:lang="en">Plot point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Politician</IRI>
+        <Literal xml:lang="en">Class that represents people that work as politician.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Politician</IRI>
+        <Literal xml:lang="en">Politician</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#President</IRI>
+        <Literal xml:lang="en">Class that represents people that work as presidents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#President</IRI>
+        <Literal xml:lang="en">President</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Profession</IRI>
+        <Literal xml:lang="en">Class to represent jobs that people can take.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Scientist</IRI>
+        <Literal xml:lang="en">Class that represents people that work as scientists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Scientist</IRI>
+        <Literal xml:lang="en">Scientist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Season</IRI>
+        <Literal xml:lang="en">Class that represents the seasons of the series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Season</IRI>
+        <Literal xml:lang="en">Season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Spy</IRI>
+        <Literal xml:lang="en">Class that represents people that work as spies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spy</IRI>
+        <Literal xml:lang="en">Spy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Superhero</IRI>
+        <Literal xml:lang="en">Class that represents people that have superpowers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Superhero</IRI>
+        <Literal xml:lang="en">Superhero</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Superpower</IRI>
+        <Literal xml:lang="en">Class that represents the superpowers that the characters can have.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Superpower</IRI>
+        <Literal xml:lang="en">Superpower</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Villain</IRI>
+        <Literal xml:lang="en">Class that represents people that act in an evil manner. They do not necessarily commit crimes or are hidding from the law.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#commits</IRI>
+        <Literal xml:lang="en">Object property that identifies a relation between a person and crime they have committed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#commits</IRI>
+        <Literal xml:lang="en">Commits</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1027,7 +1645,62 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasPurpose</IRI>
-        <Literal xml:lang="en">DataProperty that explains the purpose of a given instance.</Literal>
+        <Literal xml:lang="en">DataProperty that explains the purpose of a given plot point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPurpose</IRI>
+        <Literal xml:lang="en">Has purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSuperpowers</IRI>
+        <Literal xml:lang="en">Data property that receives a boolean to indicate if the person has a superpower</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSuperpowers</IRI>
+        <Literal xml:lang="en">Has superpowers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isMurderer</IRI>
+        <Literal xml:lang="en">Data property that takes a boolean value indicating if the person is a murderer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isMurderer</IRI>
+        <Literal xml:lang="en">Is murderer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#participates</IRI>
+        <Literal xml:lang="en">Objective property that related a person or people association to a give plot point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#participates</IRI>
+        <Literal xml:lang="en">Participates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#takesPlaceInEpisode</IRI>
+        <Literal xml:lang="en">Object property that relates plot points to episodes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#takesPlaceInEpisode</IRI>
+        <Literal xml:lang="en">Takes place in episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#takesPlaceInSeason</IRI>
+        <Literal xml:lang="en">Object property that relates plot points to seasons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#takesPlaceInSeason</IRI>
+        <Literal xml:lang="en">Takes place in season</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
